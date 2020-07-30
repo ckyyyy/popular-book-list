@@ -8,7 +8,7 @@ const app = express();
 // connect to mlab database
 // hidden <password> and <dbname>
 mongoose.connect(
-  'mongodb+srv://ckyyyy:<password>@cluster0.f6bxe.mongodb.net/<dbname>?retryWrites=true&w=majority'
+  'mongodb+srv://ckyyyy:<password>@cluster0.f6bxe.mongodb.net/<dbname>?retryWrites=true&w=majority',
   { useNewUrlParser: true, useUnifiedTopology: true }
 )
 .then(() => console.log("Connected to MongoDB Atlas"))
